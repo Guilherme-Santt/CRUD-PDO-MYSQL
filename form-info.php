@@ -29,34 +29,9 @@
                         <input type="nome" name="nome">
                     </li>
                     <button type="submit" id="btn">Enviar</button>
+                    <a href="index.php" id="btn">Home</a>
                 </ul>
             </form>
-        </div>
-        <div class="form-result">
-            <?php
-            include('db-connect.php');  
-            $infos = $connect->query('SELECT * FROM infos;')->fetchAll(\PDO::FETCH_ASSOC);
-            foreach($infos as $dados): 
-                if($dados === 0): ?>
-            <p>Nenhum dado encontrado</p>
-            <?php endif; ?>
-            <table>
-                <tr>
-                    <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Nome</th>
-                    <th>Editar</th>
-                    <th>Remover</th>
-                </tr>
-                <tr>
-                    <td><?= $dados['nome']?></td>
-                    <td><?= $dados['email']?></td>
-                    <td><?= $dados['cpf']?></td>
-                    <td><a href="editar.php?id=<?= $dados['id']?>">Editar</td>
-                    <td><a href="remover.php?id=<?= $dados['id']?>">Remover</td>
-                </tr>
-                <?php endforeach;?>
-            </table>
         </div>
     </div>
 </body>

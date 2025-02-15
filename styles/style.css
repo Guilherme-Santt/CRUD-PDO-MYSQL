@@ -10,8 +10,8 @@ ul{
 }
 .container{
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     height: 400px;
 }
 .form-container{
@@ -42,15 +42,8 @@ ul{
     opacity: 100%;
     cursor: pointer;
 } 
-.form-result{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(214, 214, 214);
-    height: 500px;
-    width: 500px;
-}
-.form-result td,th{
+
+.form-container td,th{
     border: 1px;
     border-radius: 1px;
 }

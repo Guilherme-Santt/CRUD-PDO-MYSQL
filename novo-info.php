@@ -18,9 +18,9 @@ if ($email === false || empty($email) || empty($nome) || empty($cpf)) {
     $statement->bindValue(3, $cpf);
 
     if ($statement->execute() === false) {
-        header('Location: listagem.php?sucesso=0');
+        header('Location: index.php?sucesso=0');
     } else {
-        header('Location: listagem.php?sucesso=1');
+        header('Location: index.php?sucesso=1');
     }
 
 }
