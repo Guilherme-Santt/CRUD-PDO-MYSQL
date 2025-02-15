@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +7,10 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="styles/style.css">
+<script src="./script/main.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
 
 <body>
     <header class="form-header">
@@ -43,6 +44,19 @@
             </table>
         </div>
     </div>
+    <?php 
+    $suc = filter_input(INPUT_GET, 'sucesso', FILTER_VALIDATE_INT);
+    if(isset($suc)): ?>
+    <script>
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: `Tudo certo por aqui :D`,
+        showConfirmButton: false,
+        timer: 2000
+    });
+    </script>
+    <?php endif;?>
 </body>
 
 </html>

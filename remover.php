@@ -7,9 +7,9 @@ $statement = $connect->prepare($sql);
 $statement->bindValue(1, $id);
 
 if($statement->execute() === false){
-    header('location: index.php?sucess=0');    
+    header('location: index.php?sucesso=0');    
 } else {
-    header('location: index.php?sucess=1');    
+    header('location: index.php?sucesso=1');    
 
 };
 
