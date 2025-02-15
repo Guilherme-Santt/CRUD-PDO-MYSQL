@@ -9,11 +9,10 @@ ul{
     list-style: none;
 }
 .container{
-    display: grid;
-    grid-template-columns: 2;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    height: 400px;
 }
 .form-container{
     background-color: rgb(214, 214, 214);
@@ -44,8 +43,14 @@ ul{
     cursor: pointer;
 } 
 .form-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(214, 214, 214);
-    max-height: 500px;
-    max-width: 500px;
-    border-radius: 2rem;
+    height: 500px;
+    width: 500px;
+}
+.form-result td,th{
+    border: 1px;
+    border-radius: 1px;
 }
