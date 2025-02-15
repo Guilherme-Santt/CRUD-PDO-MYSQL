@@ -19,7 +19,6 @@ ul{
     max-height: 500px;
     max-width: 500px;
     border-radius: 2rem;
-    padding: 2rem 4rem  ;
 }
 .form-container ul{
     display: grid;

@@ -24,7 +24,7 @@ if(count($_POST)){
         } else {
             header("Location: form-editar-info.php?id=$id");
         }
-}
+    }
 }  
 ?>
 <!DOCTYPE html>
